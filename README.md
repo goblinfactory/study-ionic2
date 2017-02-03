@@ -14,7 +14,10 @@ Moved all the app files into the root, delete the 'myapp' folder.
 
 ### .gitignore
 
-* remove the ignore for `.vscode` so that i can include my personalisations for `Peep` plugin, and automatically ignore all the `js` and `.map` files.
+## huh moments!
+
+* **Peep files - hide show** :  went to remove the ignore for `.vscode` so that i can include my personalisations for `Peep` plugin, so that I can automatically ignore all the `js` and `.map` files, and when I went to VSCode to test it (before doing this), I realised the `.js` files were not being shown. ***Huh!*** I'm a bit behind my study schedule so don't care (for now) why this is, and I'm sure if I ignore it, it will come back to bite me and then I can look up the details. for now, ... will go with the flow. My guess is either the recent updates (today) to VSCode, or a change in the Ionic build process, possibly a clean-step or some type of file barrel bundler?
+
 
 ## references
 
