@@ -2,24 +2,24 @@
 
 ![Ionic2 files quick reference](ionic-files.png)
 
-## `/src`
-
-> `index.html`
+## `index.html`
 
 1. Generic entry point contains `<ion-ap></ion-app>`
-1. this file loads the frameworks and your app `app.module`
+1. loads all the compiled (ts) files that make up your spa app. `build/main.js`
 
-## `/src/app`
+## `/app/app.module.ts`
 
-> `app/app.module.ts`
+1. this file loads everything : via declares, imports and bootstraps of the `@NgModule`
+1. specify your root **component** that will contain your navigation and any custom app start code
 
-1. this file *is* your app (technically it's theroot **module**) and is the actual configuration of your SPA.
-1. this file contains the logic to bootstrap your SPA (inside the frameworks loaded by `index.html`)
-1. this module defines which is the root **component** ; the first component (page) that gets loaded in the app. 
+## `/app/app.component.ts` and (`app.component.html`)
 
-> `app/`
+1. hides the splash screen and starts everything by starting your menu
+1. holds the navigation definitions e.g. `<ion-nav ... `
 
-1. adsasda
+## `/app/pages/hello.component.ts` and (`hello.component.html`)
+
+1. your components, that are being loaded by the menu navigation
 
 ## references
 
