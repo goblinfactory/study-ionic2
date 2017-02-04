@@ -9,7 +9,7 @@ import { ListPage } from '../pages/list/list';
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'start.component.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
