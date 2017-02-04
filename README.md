@@ -17,6 +17,11 @@ Moved all the app files into the root, delete the 'myapp' folder.
 
 [summary of the different files in an Ionic2 app](docs/ionic-files.md)
 
+## branch notes
+
+* `starter1` : basic setup prior to starting any serious tutorial work.
+
 ## references
 
 * [Ionic 2 Tutorial](http://ionicframework.com/docs/v2/intro/tutorial/)
+
