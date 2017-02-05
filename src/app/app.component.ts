@@ -16,10 +16,10 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  otherRootName: any = HelloIonicPage;
   pages: Array<{title: string, component: any}>;
 
-  constructor(
+  constructor( 
     public platform: Platform,
     public menu: MenuController
   ) {

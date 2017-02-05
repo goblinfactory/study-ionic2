@@ -5,6 +5,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { Test1Page }   from '../pages/test1/test1.page';
+import { FooterComponent }   from '../components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { Test1Page }   from '../pages/test1/test1.page';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    Test1Page
+    Test1Page,
+    FooterComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
