@@ -6,13 +6,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FooterComponent {
 
-  @Input()
-  year:number;
-  
-  nextYear() {
-    console.log('next year called')
-    return this.year + 1
+  private _year : number
+
+  get year()  {
+    return this._year;
   }
+
+  @Input()
+  set year(value) {
+    this._year  = value + 1;
+  }
+
   constructor() {}
 
   ionViewDidLoad() {

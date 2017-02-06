@@ -8,14 +8,21 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <button ion-button>
-          Login
-        </button>
-    <button ion-button>
-          Signup
-        </button>
-  </ion-list>
+  <button ion-button>
+    Login
+  </button>
+  <button ion-button (click)="goToTournaments()">
+    Find a tournament
+  </button>
+
+  <button ion-button (click)="goToSelf()">
+    Go to self
+  </button>
+
+  <button [disabled]="!nav.canGoBack()" ion-button (click)="popMenu()">
+    Pop menu
+  </button>
+
   <p>Hello test1</p>
   <my-footer [year]="2017"></my-footer>
 </ion-content>
