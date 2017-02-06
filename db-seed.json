@@ -1,0 +1,80 @@
+{
+    "data-sources" : {
+        "competitions" :[ "https://en.wikipedia.org/wiki/University_rowing_(UK)" ],
+        "crews": ["https://en.wikipedia.org/wiki/List_of_Cambridge_University_Boat_Race_crews"],
+        "boat-race-2016": [ "https://en.wikipedia.org/wiki/The_Boat_Races_2016"]
+    },
+    "competition": [
+        {"id": "University Boat Race", "between": "Oxford", "and":"Cambridge" },
+        {"id": "Boat Race of the North", "between":"Durham", "and":"Newcastle" },
+        {"id": "Allom Cup", "between":"University of London Colleges", "and":"University of London Colleges" },
+        {"id": "Bristol Boat Race", "between":"Bristol", "and":"UWE"},
+        {"id": "The Scottish Boat Race", "between": "Edinburgh", "and":"Glasgow"},
+        {"id": "Roses Tournament", "between":"York", "and":"Lancaster"},
+        {"id": "Aberdeen Universities Boat Race", "between":"Aberdeen", "and":"Robert Gordon University"},
+        {"id": "Two Cities Boat Race", "between":"Manchester", "and":"Salford"},
+        {"id": "Varsity Boat Race", "between":"Birmingham", "and":"University of Warwick"},
+        {"id": "Irish University Boat Race", "between":"Trinity College, Dublin", "and":"Queens University Belfast"}
+    ],
+    "competition-data": {
+        "University Boat Race": {
+            "races": [
+                {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
+                {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
+            ],
+            "locations": {
+                "River Thames Tideway": {
+                    "latitude": 51.4679,
+                    "longitude": 0.2097
+                }
+            },
+            "notes": [
+                 "todo - add in pictures of the college crests",
+                 "todo - make sure I have some sample data with both men and women's results"
+            ],
+            "universities": {
+                "Cambridge":{"colleges": ["Selwyn","Trinity","St John's","Peterhouse","St Endmund's","Hughes Hall","Queens"]},
+                "Oxford":{"colleges": ["St Endmund Hall","Christ Church","Keble","Kellog","St John's","St Cross","New College"]}
+            },
+            "crews": [
+                {
+                    "year":2016,
+                    "id": "cambridge-men-2016",
+                    "crew": "Men",
+                    "coaches": ["Steve Trapmore" ],
+                    "university": "Cambridge",
+                    "cox":"Ian Middleton",
+                    "rowers": [
+                       { "name":"F Newman","nationaity":"British","college":"Selwyn","weight":83.2 },
+                       { "name":"A Abbasi","nationaity":"German","college":"Trinity","weight":88.4 },
+                       { "name":"C Fisher","nationaity":"British","college":"St John's","weight":91.8 },
+                       { "name":"C Auersperg","nationaity":"Austrian","college":"Peterhouse","weight":90.4 },
+                       { "name":"L Juckett","nationaity":"American","college":"St Endmund's","weight":82.0 },
+                       { "name":"H Hoffstot","nationaity":"American","college":"Hughes Hall","weight":92.6 },
+                       { "name":"B Ruble","nationaity":"American","college":"Hughes Hall","weight":83.4 },
+                       { "name":"L Tredell","nationaity":"British","college":"Hughes Hall","weight":94.2 },
+                       { "name":"Ian Middleon","nationality":"British","college":"Queens'", "weight":54.0, "Cox":"yes" }
+                    ]
+                },
+                {
+                    "year":2016,
+                    "id": "oxford-men-2016",
+                    "crew": "Men",
+                    "university": "Oxford",
+                    "cox":"Sam Collier",
+                    "rowers": [
+                       { "name":"G McKirdy","nationality":"British", "college":"St Endmund Hall", "weight":76.8 },
+                       { "name":"J White","nationality":"British", "college":"Christ Church", "weight":87.0 },
+                       { "name":"M Gerlak","nationality":"British", "college":"Keble", "weight":85.8 },
+                       { "name":"J Bugajski","nationality":"British", "college":"Keble", "weight":96.4 },
+                       { "name":"L Carrington","nationality":"British", "college":"Kellogg", "weight":87.0 },
+                       { "name":"J Tveit","nationality":"British", "college":"St John's", "weight":82.4 },
+                       { "name":"J Cook","nationality":"British", "college":"St Cross", "weight":84 },
+                       { "name":"N Hazell","nationality":"British", "college":"Christ Church", "weight":94.8 },
+                       { "name":"S Collier","nationality":"British", "college":"New College", "weight":56.2, "Cox":"yes" }
+                        ]
+                }
+            ]
+        }
+    }
+}
