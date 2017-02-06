@@ -1,11 +1,22 @@
+<!--
+Emmet 1 liner, just for fun, and practice.
+
+(ion-header>ion-navbar>button[ion-button][menuToggle]>ion-icon[name=menu]^ion-title{ApName}^ion-toolbar[color=secondary]>ion-title{PgName})+ion-content[padding]{Hello my teams}
+  
+-->
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>my-teams</ion-title>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon></button>
+    <ion-title >ApName</ion-title>
   </ion-navbar>
-
+  <ion-toolbar color="secondary">
+    <ion-title>PgName</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
     Hello my-teams
 </ion-content>
+
