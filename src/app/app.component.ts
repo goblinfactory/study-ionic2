@@ -8,7 +8,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { Test1Page } from '../pages/test1/test1.page';
 import { MyTeamsPage } from '../pages/my-teams/my-teams.page';
-
+import { TournamentsPage } from '../pages/tournaments/tournaments.page';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,8 +30,7 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Alan\`s Test1 Page', component: Test1Page },
-      { title: 'My Teams Page', component: MyTeamsPage },
+      { title: 'Alan\`s Test1 Page', component: Test1Page }
     ];
   }
 
@@ -44,10 +43,21 @@ export class MyApp {
     });
   }
 
+  // this is bound to the ngFor on the button inside the first ion-list
   openPage(page) {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
   }
+
+  goHome() {
+    //this.nav.popToRoot();
+    this.nav.push(HelloIonicPage);
+  }
+
+  goToTournaments() {
+    this.nav.push(TournamentsPage);
+  }
+
 }

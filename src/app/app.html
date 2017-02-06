@@ -1,17 +1,22 @@
 <ion-menu [content]="content">
 
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="menu">
       <ion-title>Pages</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
+      <ion-list-header>some special pages</ion-list-header>
       <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
+      <ion-list-header>Elite schedule pages</ion-list-header>
+      <button menuClose ion-item (click)="goHome()">Home</button>
+      <button menuClose ion-item (click)="goToTournaments()">Find a tournament</button>
     </ion-list>
+    
   </ion-content>
 
 </ion-menu>

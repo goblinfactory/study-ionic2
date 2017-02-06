@@ -9,6 +9,10 @@ export class TournamentsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
+  itemTapped() {
+
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad (pagename)Page');
   }
