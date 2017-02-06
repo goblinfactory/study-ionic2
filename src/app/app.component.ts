@@ -52,8 +52,8 @@ export class MyApp {
   }
 
   goHome() {
-    //this.nav.popToRoot();
-    this.nav.push(HelloIonicPage);
+    this.nav.popToRoot();
+    this.nav.push(MyTeamsPage);
   }
 
   goToTournaments() {
