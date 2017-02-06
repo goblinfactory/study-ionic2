@@ -7,10 +7,10 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { Test1Page }   from '../pages/test1/test1.page';
 import { FooterComponent }   from '../components/footer/footer.component';
-import { TournamentsPage }   from '../pages/tournaments/tournaments.page';
-import { MyTeamsPage }   from '../pages/my-teams/my-teams.page';
-import { TeamDetailsPage }   from '../pages/team-details/team-details.page';
-import { TeamsPage }   from '../pages/teams/teams.page';
+
+import { TeamsPage,StandingsPage, TeamDetailsPage, TournamentsPage, MyTeamsPage, TeamHomePage }   from '../pages/pages';
+
+
 
 
 @NgModule({
@@ -24,7 +24,9 @@ import { TeamsPage }   from '../pages/teams/teams.page';
     TournamentsPage,
     MyTeamsPage,
     TeamDetailsPage,
-    TeamsPage
+    TeamsPage,
+    StandingsPage, 
+    TeamHomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -40,7 +42,10 @@ import { TeamsPage }   from '../pages/teams/teams.page';
     TournamentsPage,
     MyTeamsPage,
     TeamDetailsPage,
-    TeamsPage
+    TeamHomePage,
+    TeamsPage,
+    StandingsPage
+    
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

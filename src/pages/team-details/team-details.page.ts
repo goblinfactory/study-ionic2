@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular'; // NavParams only needed if passing in navigation parameters. 
 
 @Component({
   selector: 'page-team-details',
@@ -7,7 +7,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TeamDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  team : { id:number, name:string }
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.team = navParams.data
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad (pagename)Page');

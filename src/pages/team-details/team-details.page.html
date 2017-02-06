@@ -1,11 +1,12 @@
 <ion-header>
 
   <ion-navbar color="secondary">
-    <ion-title>team-details</ion-title>
+    <ion-title>{{team.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
-    Hello team-details
+    id : {{team.id}}<br/>
+    name : <input [value]="team.name"><br/>
 </ion-content>
