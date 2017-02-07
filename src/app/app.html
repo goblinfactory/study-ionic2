@@ -8,10 +8,6 @@
 
   <ion-content>
     <ion-list>
-      <ion-list-header>some special pages</ion-list-header>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
       <ion-list-header>UK Rowing Tournaments</ion-list-header>
       <button menuClose ion-item (click)="goHome()">My Teams</button>
       <button menuClose ion-item (click)="goToTournaments()">Find a tournament</button>
