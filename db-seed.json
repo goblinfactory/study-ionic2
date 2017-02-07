@@ -30,7 +30,8 @@
             },
             "notes": [
                  "todo - add in pictures of the college crests",
-                 "todo - make sure I have some sample data with both men and women's results"
+                 "todo - make sure I have some sample data with both men and women's results",
+                 "data might be good for rendering as a small graph, browse by college, browse by rower (assuming we can track rowers moving between colleges. Name as id might be good enough.)"
             ],
             "universities": {
                 "Cambridge":{"colleges": ["Selwyn","Trinity","St John's","Peterhouse","St Endmund's","Hughes Hall","Queens"]},
