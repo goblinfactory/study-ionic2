@@ -4,39 +4,69 @@
         "crews": ["https://en.wikipedia.org/wiki/List_of_Cambridge_University_Boat_Race_crews"],
         "boat-race-2016": [ "https://en.wikipedia.org/wiki/The_Boat_Races_2016"]
     },
+
+    "notes": [
+                "todo - add in pictures of the college crests",
+                "todo - make sure I have some sample data with both men and women's results",
+                "data might be good for rendering as a small graph, browse by college, browse by rower (assuming we can track rowers moving between colleges. Name as id might be good enough.)"
+        ],    
+
+    "universities": {
+        "Cambridge":{"colleges": ["Selwyn","Trinity","St John's","Peterhouse","St Endmund's","Hughes Hall","Queens"]},
+        "Oxford":{"colleges": ["St Endmund Hall","Christ Church","Keble","Kellog","St John's","St Cross","New College"]}
+    },  
+
+    "locations": {
+        "River Thames Tideway": {
+            "latitude": 51.4679,
+            "longitude": 0.2097
+        }
+    },
+
     "competitions": [
-        {"id": "University Boat Race", "between": "Oxford", "and":"Cambridge" },
-        {"id": "Boat Race of the North", "between":"Durham", "and":"Newcastle" },
-        {"id": "Allom Cup", "between":"University of London Colleges", "and":"University of London Colleges" },
-        {"id": "Bristol Boat Race", "between":"Bristol", "and":"UWE"},
-        {"id": "The Scottish Boat Race", "between": "Edinburgh", "and":"Glasgow"},
-        {"id": "Roses Tournament", "between":"York", "and":"Lancaster"},
-        {"id": "Aberdeen Universities Boat Race", "between":"Aberdeen", "and":"Robert Gordon University"},
-        {"id": "Two Cities Boat Race", "between":"Manchester", "and":"Salford"},
-        {"id": "Varsity Boat Race", "between":"Birmingham", "and":"University of Warwick"},
-        {"id": "Irish University Boat Race", "between":"Trinity College, Dublin", "and":"Queens University Belfast"}
+        {"id": "University Boat Race", "between":["Oxford", "Cambridge"]},
+        {"id": "Boat Race of the North", "between":["Durham","Newcastle"]},
+        {"id": "Allom Cup", "between":["University of London Colleges","University of London Colleges"]},
+        {"id": "Bristol Boat Race", "between":["Bristol","UWE"]},
+        {"id": "The Scottish Boat Race", "between":["Edinburgh", "Glasgow"]},
+        {"id": "Roses Tournament", "between":["York","Lancaster"]},
+        {"id": "Aberdeen Universities Boat Race", "between":["Aberdeen", "Robert Gordon University"]},
+        {"id": "Two Cities Boat Race", "between":["Manchester","Salford"]},
+        {"id": "Varsity Boat Race", "between":["Birmingham", "University of Warwick"]},
+        {"id": "Irish University Boat Race", "between":["Trinity College, Dublin", "Queens University Belfast"]}
     ],
-    "competition-data": {
-        "University Boat Race": {
-            "races": [
-                {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
-                {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
+        "nationalities" :[
+            "British",
+            "German",
+            "Austrian",
+            "American"
+        ],
+        "coxes": [
+            "Ian Middleton",
+            "S Collier"
+        ],
+        "rowers":[
+            "F newman",
+            "A Abbasi",
+            "C Fisher",
+            "C Aursperg",
+            "L Juckett",
+            "H Hoffstot",
+            "B Ruble",
+            "L Tredell",
+            "Ian Middleton",
+            "G McKirdy",
+            "J White",
+            "M Gerlak",
+            "J Bugajski",
+            "L Carrington",
+            "J Tveit",
+            "N Hazell",
+            "S Collier"
+        ],
+        "coaches": [
+            "Steve Trapmore"
             ],
-            "locations": {
-                "River Thames Tideway": {
-                    "latitude": 51.4679,
-                    "longitude": 0.2097
-                }
-            },
-            "notes": [
-                 "todo - add in pictures of the college crests",
-                 "todo - make sure I have some sample data with both men and women's results",
-                 "data might be good for rendering as a small graph, browse by college, browse by rower (assuming we can track rowers moving between colleges. Name as id might be good enough.)"
-            ],
-            "universities": {
-                "Cambridge":{"colleges": ["Selwyn","Trinity","St John's","Peterhouse","St Endmund's","Hughes Hall","Queens"]},
-                "Oxford":{"colleges": ["St Endmund Hall","Christ Church","Keble","Kellog","St John's","St Cross","New College"]}
-            },
             "crews": [
                 {
                     "year":2016,
@@ -75,6 +105,13 @@
                        { "name":"S Collier","nationality":"British", "college":"New College", "weight":56.2, "Cox":"yes" }
                         ]
                 }
+            ],
+
+    "competition-data": {
+        "University Boat Race": {
+            "races": [
+                {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
+                {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
             ]
         }
     }
