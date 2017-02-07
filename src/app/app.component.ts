@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { MyCrewsPage, TournamentsPage } from '../pages/pages';
+import { MyCrewsPage, CompetitionsPage } from '../pages/pages';
 
 
 @Component({
@@ -45,7 +45,7 @@ export class MyApp {
   }
 
   goToTournaments() {
-    this.nav.push(TournamentsPage);
+    this.nav.push(CompetitionsPage);
   }
 
 }

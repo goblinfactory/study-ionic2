@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TournamentsPage } from '../tournaments/tournaments.page';
+import { CompetitionsPage } from '../pages';
 
 @Component({
   selector: 'page-my-crews',
@@ -15,6 +15,6 @@ export class MyCrewsPage {
   }
 
   findATournament() {
-   this.nav.push(TournamentsPage);
+   this.nav.push(CompetitionsPage);
   }
 }
