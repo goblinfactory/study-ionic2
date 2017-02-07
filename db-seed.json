@@ -4,7 +4,7 @@
         "crews": ["https://en.wikipedia.org/wiki/List_of_Cambridge_University_Boat_Race_crews"],
         "boat-race-2016": [ "https://en.wikipedia.org/wiki/The_Boat_Races_2016"]
     },
-    "competition": [
+    "competitions": [
         {"id": "University Boat Race", "between": "Oxford", "and":"Cambridge" },
         {"id": "Boat Race of the North", "between":"Durham", "and":"Newcastle" },
         {"id": "Allom Cup", "between":"University of London Colleges", "and":"University of London Colleges" },
