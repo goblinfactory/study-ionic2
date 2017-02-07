@@ -1,12 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-
 import { Platform, MenuController, Nav } from 'ionic-angular';
-
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
-import { Test1Page } from '../pages/test1/test1.page';
 import { MyTeamsPage } from '../pages/my-teams/my-teams.page';
 import { TournamentsPage } from '../pages/tournaments/tournaments.page';
 
