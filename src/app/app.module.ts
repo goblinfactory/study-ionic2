@@ -1,9 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
 
+import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { Test1Page }   from '../pages/test1/test1.page';
 import { FooterComponent }   from '../components/footer/footer.component';
@@ -16,7 +15,6 @@ import { TeamsPage,StandingsPage, TeamDetailsPage, TournamentsPage, MyTeamsPage,
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
     ItemDetailsPage,
     ListPage,
     Test1Page,
@@ -35,7 +33,6 @@ import { TeamsPage,StandingsPage, TeamDetailsPage, TournamentsPage, MyTeamsPage,
   entryComponents: [
     // I think this might wire up factories for these components (pages) i.e. when used with navs?
     MyApp,
-    HelloIonicPage,
     ItemDetailsPage,
     ListPage,
     Test1Page,
