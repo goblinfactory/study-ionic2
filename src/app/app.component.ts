@@ -17,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  otherRootName: any = HelloIonicPage;
+  startPage: any = MyTeamsPage;
   pages: Array<{title: string, component: any}>;
 
   constructor( 
