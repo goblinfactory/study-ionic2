@@ -1,28 +1,17 @@
-<!--
-Emmet 1 liner, just for fun, and practice.
-
-(ion-header>ion-navbar>button[ion-button][menuToggle]>ion-icon[name=menu]^ion-title{ApName}^ion-toolbar[color=secondary]>ion-title{PgName})+ion-content[padding]{Hello my teams}
-
-pausing at : https://app.pluralsight.com/player?course=ionic2-angular2-typescript-mobile-apps&author=steve-michelotti&name=ionic2-angular2-typescript-mobile-apps-m3&clip=5&mode=live
-
-Navigation > Side Menu navigation 
-
--->
-
 <ion-header>
   <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon></button>
-    <ion-title >UK Rowing Teams &amp; Tournaments</ion-title>
+    <ion-title >University Rowing Crews</ion-title>
   </ion-navbar>
   <ion-toolbar color="secondary">
-    <ion-title>My Teams</ion-title>
+    <ion-title>My crews</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-    <p>You are not currently following any teams.</p>
-    <p>First select a tournament, then you can follow teams from their team page.</p>
-     <button ion-button color="primary" (click)="findATournament()">Find a tournament</button>
+    <p>You are not currently following any University crews.</p>
+    <p>First select a rowing competition, then you can follow a crews from the competition page.</p>
+     <button ion-button color="primary" (click)="findATournament()">Find a competition.</button>
 </ion-content>
 
