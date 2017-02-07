@@ -2,8 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { MyTeamsPage } from '../pages/my-teams/my-teams.page';
-import { TournamentsPage } from '../pages/tournaments/tournaments.page';
+import { MyCrewsPage, TournamentsPage } from '../pages/pages';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +12,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  startPage: any = MyTeamsPage;
+  startPage: any = MyCrewsPage;
 
   constructor( 
     public platform: Platform,
@@ -41,7 +41,7 @@ export class MyApp {
 
   goHome() {
     this.nav.popToRoot();
-    this.nav.push(MyTeamsPage);
+    this.nav.push(MyCrewsPage);
   }
 
   goToTournaments() {

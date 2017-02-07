@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
 import { TournamentsPage } from '../tournaments/tournaments.page';
 
 @Component({
-  selector: 'page-my-teams',
-  templateUrl: 'my-teams.page.html'
+  selector: 'page-my-crews',
+  templateUrl: 'my-crews.page.html'
 })
-export class MyTeamsPage {
+export class MyCrewsPage {
 
   constructor(public nav: NavController, public navParams: NavParams) {}
 
