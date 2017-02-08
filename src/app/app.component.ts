@@ -1,13 +1,19 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
+import { HttpModule } from '@angular/http';
 
 import { MyCrewsPage, CompetitionsPage } from '../pages/pages';
-
+import { RowingApi } from '../shared/shared'
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+    RowingApi,
+    HttpModule
+  ]
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
