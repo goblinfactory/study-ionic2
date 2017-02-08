@@ -67,6 +67,8 @@
         "coaches": [
             "Steve Trapmore"
             ],
+    "competition-data": {
+
             "crews": [
                 {
                     "year":2016,
@@ -107,12 +109,14 @@
                 }
             ],
 
-    "competition-data": {
-        "University Boat Race": {
-            "races": [
-                {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
-                {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
-            ]
-        }
+            "races": {
+                "University Boat Race": {
+                    "races": [
+                        {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
+                        {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
+                    ]
+                }
+            }
+            
     }
 }
