@@ -7,7 +7,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CompetitionDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  competition: any;
+
+  constructor(public nav: NavController, public navParams: NavParams) {
+    this.competition = navParams.data;
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad (pagename)Page');

@@ -3,13 +3,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 
-import { LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage, MyCrewsPage, TeamHomePage }   from '../pages/pages';
+import { LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage,CompetitionDetailsPage, MyCrewsPage, TeamHomePage }   from '../pages/pages';
 
 
 @NgModule({
   declarations: [
     MyApp,
     CompetitionsPage,
+    CompetitionDetailsPage,
     MyCrewsPage,
     TeamDetailsPage,
     TeamsPage,
@@ -25,6 +26,7 @@ import { LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage, 
     // I think this might wire up factories for these components (pages) i.e. when used with navs?
     MyApp,
     CompetitionsPage,
+    CompetitionDetailsPage,
     MyCrewsPage,
     TeamDetailsPage,
     TeamHomePage,

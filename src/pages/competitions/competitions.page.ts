@@ -16,7 +16,7 @@ export class CompetitionsPage {
   competitions : any;
 
   itemTapped($event, competition) {
-    //this.nav.push(TeamsPage, competition);
+    console.log(competition);
     this.nav.push(CompetitionDetailsPage, competition);
   }
 
