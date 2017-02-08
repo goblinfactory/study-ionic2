@@ -3,7 +3,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HttpModule } from '@angular/http';
 
-import { MyCrewsPage, CompetitionsPage } from '../pages/pages';
+import { MyCrewsPage, CompetitionsPage, LegalPage } from '../pages/pages';
 import { RowingApi } from '../shared/shared'
 
 @Component({
@@ -52,6 +52,10 @@ export class MyApp {
 
   goToTournaments() {
     this.nav.push(CompetitionsPage);
+  }
+
+  goToLegal() {
+    this.nav.push(LegalPage);
   }
 
 }
