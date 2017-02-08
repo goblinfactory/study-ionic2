@@ -10,11 +10,36 @@ export class MyCrewsPage {
 
   constructor(public nav: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad (pagename)Page');
-  }
 
   findATournament() {
    this.nav.push(CompetitionsPage);
   }
+  // LELU did leave, will did enter, will did load, will did unload 
+
+  ionViewDidLoad(){
+    console.log('Did load')
+  }
+
+  ionViewWillEnter(){
+    console.log('Will enter')
+  }
+  ionViewDidEnter(){
+    console.log('Did enter')
+  }
+
+  ionViewWillLeave(){
+        console.log('will leave')
+  }
+  ionViewDidLeave(){
+        console.log('Did leave')
+  }
+
+  ionViewWillUnload(){
+        console.log('will unload')
+  }
+
+  ionViewDidUnload(){
+        console.log('Did unload')
+  }
+
 }

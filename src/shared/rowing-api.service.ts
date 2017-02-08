@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Http,Response } from '@angular/http';
+import { Observable } from 'rxjs';
 
+
+export interface Race { between:string[], id:string }
+export interface Races { Promise<Race>() }
 
 @Injectable()
 export class RowingApi {
@@ -9,11 +13,20 @@ export class RowingApi {
 
     constructor(private http:Http) { }
 
-    getCompetitions(){
-        var url = `${this.base}/competitions.json`;
-        var observable = this.http.get(url);
-        return new Promise(r => {
-            observable.subscribe(r=> )
-        })
+    getCompetitions()  {
+        let promise = this._get("competitions");
+        console.log("oooh, I'm being called! ");
+        return promise;
     }
+
+    _get( route : string ) : Promise<any> {
+        return new Promise(resolve => {
+                let url = `${this.base}/${route}.json`;
+                console.log(`_get ${url}`);
+                this.http.get(url).subscribe(res => resolve(res.json()))
+        });
+    }
+
+
+
 }
