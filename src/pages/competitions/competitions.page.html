@@ -14,12 +14,12 @@
   <ion-list>
     <button ion-item *ngFor="let c of competitions" (click)="itemTapped($event, c)">
       <ion-icon item-left>
-        <img src="assets/img/commons.wikimedia.org/{{c.between[0]}}-arms-ico.png"/>
+        <img src="assets/img/commons.wikimedia.org/{{c.between[0]}}-arms-ico.png" width="35"/>
       </ion-icon>
       {{c.id}}<br/>
       {{c.between[0]}} vs {{c.between[1]}}
       <ion-icon item-right>
-          <img src="assets/img/commons.wikimedia.org/{{c.between[1]}}-arms-ico.png"/>
+          <img src="assets/img/commons.wikimedia.org/{{c.between[1]}}-arms-ico.png" width="35"/>
       </ion-icon>
     </button>
 

@@ -21,9 +21,13 @@ export class CompetitionsPage {
   }
 
   ionViewDidLoad() {
-    this.api.getCompetitions().then( data => {
-      this.competitions = data;
-      console.log(this.competitions);
+    // take only the first 6, since we don't yet have arms and icons for the rest
+    // simple hack, to keep the demo clean. Otherwise we need an additional property or function (has arms icon)
+
+    this.api.getCompetitions()
+      .then( data => {
+      this.competitions = data.slice(0,6);
+      console.log(this.competitions );
     });
   }
 
