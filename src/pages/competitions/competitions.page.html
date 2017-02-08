@@ -8,14 +8,22 @@
 
 <ion-content padding>
   <ion-refresher (ionRefresh)="doRefresh($event)">
-     <ion-refresher-content
-           pullingIcon="arrow-dropdown"
-      refreshingSpinner="circles">
-     </ion-refresher-content>
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles">
+    </ion-refresher-content>
   </ion-refresher>
-<ion-list>
-  <button ion-item *ngFor="let c of competitions" (click)="itemTapped($event, c)">{{c.id}}</button>
-</ion-list>
+  <ion-list>
+    <button ion-item *ngFor="let c of competitions" (click)="itemTapped($event, c)">
+      <ion-icon item-left>
+        <img src="assets/img/commons.wikimedia.org/{{c.between[0]}}-arms-ico.png"/>
+      </ion-icon>
+      {{c.id}}<br/>
+      {{c.between[0]}} vs {{c.between[1]}}
+      <ion-icon item-right>
+          <img src="assets/img/commons.wikimedia.org/{{c.between[1]}}-arms-ico.png"/>
+      </ion-icon>
+    </button>
+
+    <ion-item>
+    </ion-item>
+  </ion-list>
 </ion-content>
-
-
