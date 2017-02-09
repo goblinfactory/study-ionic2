@@ -33,11 +33,11 @@
 </ion-grid>
 
 <div padding>
-  <ion-segment [(ngModel)]="sex" color="secondary">
-    <ion-segment-button value="men" selected>
+  <ion-segment [(ngModel)]="sex" color="secondary" (ionChange)="changeSex()">
+    <ion-segment-button value="Mens">
       Mens
     </ion-segment-button>
-    <ion-segment-button value="women">
+    <ion-segment-button value="Women">
       Women
     </ion-segment-button>
   </ion-segment>

@@ -19,22 +19,31 @@ export class CompetitionDetailsPage {
                 }
             };
 
-
   competition: any;
   id : string;
   races : any;
+  sex : any;
   
   // hard code for now, inject later
 
   constructor(public nav: NavController, public navParams: NavParams) {
+    console.log(`constructor called...`)
     this.competition = navParams.data;
     this.id = this.competition.id;
-    this.races = this._racedata["University Boat Race"].races;
+    this.sex = "Mens";
+    this._filterBySex();
+  }
 
+  _filterBySex() {
+    this.races = this._racedata["University Boat Race"].races.filter( r=> r.race ==this.sex);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad (pagename)Page');
   }
 
+  changeSex() {
+    console.log("sex changed ", this.sex);
+    this._filterBySex();
+  }
 }
