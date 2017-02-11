@@ -18,17 +18,16 @@ export class RowingApi {
         return promise;
     }
 
+    getRaces() {
+        return this._get("races");
+    }
+
     _get( route : string ) : Promise<any> {
         return new Promise(resolve => {
                 let url = `${this.base}/${route}.json`;
                 console.log(`_get ${url}`);
                 this.http.get(url).subscribe(res => resolve(res.json()))
         });
-    }
-
-    getCompetitionDataRx(tournament : string ) {
-        // gets the competition data { "crews" ... "races" }
-        // for the given competition... 
     }
 
 }
