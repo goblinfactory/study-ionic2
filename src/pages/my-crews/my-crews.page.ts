@@ -11,7 +11,7 @@ export class MyCrewsPage {
   constructor(public nav: NavController, public navParams: NavParams) {}
 
 
-  findATournament() {
+  findACompetition() {
    this.nav.push(CompetitionsPage);
   }
   // LELU did leave, will did enter, will did load, will did unload 
