@@ -35,43 +35,43 @@
         {"id": "Varsity Boat Race", "between":["Birmingham", "University of Warwick"]},
         {"id": "Irish University Boat Race", "between":["Trinity College, Dublin", "Queens University Belfast"]}
     ],
-        "nationalities" :[
-            "British",
-            "German",
-            "Austrian",
-            "American"
+    "nationalities" :[
+        "British",
+        "German",
+        "Austrian",
+        "American"
+    ],
+    "coxes": [
+        "Ian Middleton",
+        "S Collier"
+    ],
+    "rowers":[
+        "F newman",
+        "A Abbasi",
+        "C Fisher",
+        "C Aursperg",
+        "L Juckett",
+        "H Hoffstot",
+        "B Ruble",
+        "L Tredell",
+        "Ian Middleton",
+        "G McKirdy",
+        "J White",
+        "M Gerlak",
+        "J Bugajski",
+        "L Carrington",
+        "J Tveit",
+        "N Hazell",
+        "S Collier"
+    ],
+    "coaches": [
+        "Steve Trapmore"
         ],
-        "coxes": [
-            "Ian Middleton",
-            "S Collier"
-        ],
-        "rowers":[
-            "F newman",
-            "A Abbasi",
-            "C Fisher",
-            "C Aursperg",
-            "L Juckett",
-            "H Hoffstot",
-            "B Ruble",
-            "L Tredell",
-            "Ian Middleton",
-            "G McKirdy",
-            "J White",
-            "M Gerlak",
-            "J Bugajski",
-            "L Carrington",
-            "J Tveit",
-            "N Hazell",
-            "S Collier"
-        ],
-        "coaches": [
-            "Steve Trapmore"
-            ],
-            "crews-notes":[ 
-                    "// sample : x.Cambridge._2016.Men.rowers[2].name == 'A Abbasi",
-                    "// ----------------------------------------------------------"
-            ],
-            "crews": {
+    "crews-notes": [ 
+        "// sample : x.Cambridge._2016.Men.rowers[2].name == 'A Abbasi",
+        "// ----------------------------------------------------------"
+    ],
+    "crews": {
                 "Cambridge":
                 {
                     "_2016":
@@ -150,5 +150,4 @@
                 }
             }
             
-    }
 }
