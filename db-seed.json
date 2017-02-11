@@ -67,47 +67,79 @@
         "coaches": [
             "Steve Trapmore"
             ],
-    "competition-data": {
-
-            "crews": [
-                {
-                    "year":2016,
-                    "id": "cambridge-men-2016",
-                    "crew": "Men",
-                    "coaches": ["Steve Trapmore" ],
-                    "university": "Cambridge",
-                    "cox":"Ian Middleton",
-                    "rowers": [
-                       { "name":"F Newman","nationaity":"British","college":"Selwyn","weight":83.2 },
-                       { "name":"A Abbasi","nationaity":"German","college":"Trinity","weight":88.4 },
-                       { "name":"C Fisher","nationaity":"British","college":"St John's","weight":91.8 },
-                       { "name":"C Auersperg","nationaity":"Austrian","college":"Peterhouse","weight":90.4 },
-                       { "name":"L Juckett","nationaity":"American","college":"St Endmund's","weight":82.0 },
-                       { "name":"H Hoffstot","nationaity":"American","college":"Hughes Hall","weight":92.6 },
-                       { "name":"B Ruble","nationaity":"American","college":"Hughes Hall","weight":83.4 },
-                       { "name":"L Tredell","nationaity":"British","college":"Hughes Hall","weight":94.2 },
-                       { "name":"Ian Middleon","nationality":"British","college":"Queens'", "weight":54.0, "Cox":"yes" }
-                    ]
-                },
-                {
-                    "year":2016,
-                    "id": "oxford-men-2016",
-                    "crew": "Men",
-                    "university": "Oxford",
-                    "cox":"Sam Collier",
-                    "rowers": [
-                       { "name":"G McKirdy","nationality":"British", "college":"St Endmund Hall", "weight":76.8 },
-                       { "name":"J White","nationality":"British", "college":"Christ Church", "weight":87.0 },
-                       { "name":"M Gerlak","nationality":"British", "college":"Keble", "weight":85.8 },
-                       { "name":"J Bugajski","nationality":"British", "college":"Keble", "weight":96.4 },
-                       { "name":"L Carrington","nationality":"British", "college":"Kellogg", "weight":87.0 },
-                       { "name":"J Tveit","nationality":"British", "college":"St John's", "weight":82.4 },
-                       { "name":"J Cook","nationality":"British", "college":"St Cross", "weight":84 },
-                       { "name":"N Hazell","nationality":"British", "college":"Christ Church", "weight":94.8 },
-                       { "name":"S Collier","nationality":"British", "college":"New College", "weight":56.2, "Cox":"yes" }
-                        ]
-                }
+            "crews-notes":[ 
+                    "// sample : x.Cambridge._2016.Men.rowers[2].name == 'A Abbasi",
+                    "// ----------------------------------------------------------"
             ],
+            "crews": {
+                "Cambridge":
+                {
+                    "_2016":
+                    {
+                        "Men": 
+                        {
+                            "coaches": ["Steve Trapmore" ],
+                            "cox":"Ian Middleton",
+                            "rowers": [
+                            { "name":"F Newman","nationaity":"British","college":"Selwyn","weight":83.2 },
+                            { "name":"A Abbasi","nationaity":"German","college":"Trinity","weight":88.4 },
+                            { "name":"C Fisher","nationaity":"British","college":"St John's","weight":91.8 },
+                            { "name":"C Auersperg","nationaity":"Austrian","college":"Peterhouse","weight":90.4 },
+                            { "name":"L Juckett","nationaity":"American","college":"St Endmund's","weight":82.0 },
+                            { "name":"H Hoffstot","nationaity":"American","college":"Hughes Hall","weight":92.6 },
+                            { "name":"B Ruble","nationaity":"American","college":"Hughes Hall","weight":83.4 },
+                            { "name":"L Tredell","nationaity":"British","college":"Hughes Hall","weight":94.2 },
+                            { "name":"Ian Middleon","nationality":"British","college":"Queens'", "weight":54.0, "Cox":"yes" }]
+                        },
+                        "Women": 
+                        {
+                            "coaches": ["Steve Trapmore" ],
+                            "cox":"Not Ian Middleton",
+                            "rowers": [
+                            { "name":"A Rower1","nationaity":"British","college":"Selwyn","weight":73.2 },
+                            { "name":"B Rower2","nationaity":"German","college":"Trinity","weight":78.4 },
+                            { "name":"C Rower3","nationaity":"British","college":"St John's","weight":81.8 },
+                            { "name":"D Rower4","nationaity":"Austrian","college":"Peterhouse","weight":80.4 },
+                            { "name":"E Rower5","nationaity":"American","college":"St Endmund's","weight":72.0 },
+                            { "name":"F Rower6","nationaity":"American","college":"Hughes Hall","weight":82.6 },
+                            { "name":"G Rower7","nationaity":"American","college":"Hughes Hall","weight":73.4 },
+                            { "name":"H Rower8","nationaity":"British","college":"Hughes Hall","weight":84.2 },
+                            { "name":"I Rower9","nationality":"British","college":"Queens'", "weight":54.0, "Cox":"yes" }]
+                        }
+                    }       
+                },
+                "Oxford":
+                {
+                    "_2016":{
+                        "Men":{
+                                "cox":"Sam Collier",
+                                "rowers": [
+                                { "name":"G McKirdy","nationality":"British", "college":"St Endmund Hall", "weight":76.8 },
+                                { "name":"J White","nationality":"British", "college":"Christ Church", "weight":87.0 },
+                                { "name":"M Gerlak","nationality":"British", "college":"Keble", "weight":85.8 },
+                                { "name":"J Bugajski","nationality":"British", "college":"Keble", "weight":96.4 },
+                                { "name":"L Carrington","nationality":"British", "college":"Kellogg", "weight":87.0 },
+                                { "name":"J Tveit","nationality":"British", "college":"St John's", "weight":82.4 },
+                                { "name":"J Cook","nationality":"British", "college":"St Cross", "weight":84 },
+                                { "name":"N Hazell","nationality":"British", "college":"Christ Church", "weight":94.8 },
+                                { "name":"S Collier","nationality":"British", "college":"New College", "weight":56.2, "Cox":"yes" }]
+                        },
+                        "Women":{
+                                "cox":"Not Same Collier",
+                                "rowers": [
+                                { "name":"A WomanRower","nationality":"British", "college":"St Endmund Hall", "weight":76.8 },
+                                { "name":"A WomanRower","nationality":"British", "college":"Christ Church", "weight":87.0 },
+                                { "name":"A WomanRower","nationality":"British", "college":"Keble", "weight":85.8 },
+                                { "name":"A WomanRower","nationality":"British", "college":"Keble", "weight":96.4 },
+                                { "name":"A WomanRower","nationality":"British", "college":"Kellogg", "weight":87.0 },
+                                { "name":"A WomanRower","nationality":"British", "college":"St John's", "weight":82.4 },
+                                { "name":"A WomanRower","nationality":"British", "college":"St Cross", "weight":84 },
+                                { "name":"A WomanRower","nationality":"British", "college":"Christ Church", "weight":94.8 },
+                                { "name":"A WomanRower","nationality":"British", "college":"New College", "weight":56.2, "Cox":"yes" }]
+                        }
+                    }
+                }
+            },
 
             "races": {
                 "University Boat Race": {

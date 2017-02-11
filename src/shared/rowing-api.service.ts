@@ -15,7 +15,6 @@ export class RowingApi {
 
     getCompetitions()  {
         let promise = this._get("competitions");
-        console.log("oooh, I'm being called! ");
         return promise;
     }
 
@@ -27,6 +26,9 @@ export class RowingApi {
         });
     }
 
-
+    getCompetitionDataRx(tournament : string ) {
+        // gets the competition data { "crews" ... "races" }
+        // for the given competition... 
+    }
 
 }
