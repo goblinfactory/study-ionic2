@@ -3,7 +3,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 
-import { LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage,CompetitionDetailsPage, MyCrewsPage, TeamHomePage }   from '../pages/pages';
+import { DerpPipe, LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage,CompetitionDetailsPage, MyCrewsPage, TeamHomePage }   from '../pages/pages';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import { LegalPage, TeamsPage,StandingsPage, TeamDetailsPage, CompetitionsPage,C
     TeamsPage,
     StandingsPage, 
     TeamHomePage,
-    LegalPage
+    LegalPage,
+    DerpPipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)

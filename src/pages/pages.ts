@@ -6,5 +6,5 @@ export * from './teams/teams.page'; // college rowing teams
 export * from './standings/standings.page';
 export * from './team-home/team-home.page';
 export * from './legal/legal.page';
-
+export * from './derp';
 

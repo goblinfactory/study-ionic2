@@ -1,18 +1,15 @@
-import { Component, Injectable, Pipe } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
 import { RowingApi } from '../../shared/shared'
+import {DerpPipe } from '../derp'
 
 @Component({
   selector: 'page-competition-details',
   templateUrl: 'competition-details.page.html'
 })
 
-@Pipe({ name: 'derp' })
-export class DerpPipe {
-  transform (value, args) {
-    return Array.from(value);
-  }
-}
+
             
 @Injectable()            
 export class CompetitionDetailsPage {

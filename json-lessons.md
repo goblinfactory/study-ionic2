@@ -45,3 +45,4 @@
 ```
 
 - might need to create a fake 'derp' pipe, that does nothing if you use deeply nested object graphs. see this link https://github.com/angular/angular/issues/6392
+- if you're binding to dictionaries, then you need to jump through a bit of hoops : see http://stackoverflow.com/questions/31490713/iterate-over-typescript-dictionary-in-angular-2 
