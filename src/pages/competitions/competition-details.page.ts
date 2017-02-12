@@ -29,9 +29,9 @@ _races : any;
     
     // unwrap promise
     this.api.getRaces(this.id).then( res => {
-      this._races = res;
+      this._races = res || [];
       console.log("params",{ competition:this.competition, id: this.id, sex:this.sex, races:this._races });
-      this.racesBySex = this._races[this.sex];
+      this.racesBySex =  this._races[this.sex];
       console.log('racesBySex',this.racesBySex);
     });
 
