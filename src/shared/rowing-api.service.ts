@@ -9,20 +9,22 @@ export interface Races { Promise<Race>() }
 @Injectable()
 export class RowingApi {
     
-    private base = "https://cambridge-rowers-12dbf.firebaseio.com/";
+    private base = "https://cambridge-rowers-12dbf.firebaseio.com";
 
     constructor(private http:Http) { }
 
-    getCompetitions()  {
-        let promise = this._get("competitions");
-        return promise;
+    getCompetitions() : Promise<any> {
+        console.log('getCompetitions');
+        return this._get("competitions");
     }
 
-    getRaces() {
-        return this._get("races");
+    getRaces(competition: string) : Promise<any> {
+        console.log('getRaces', competition);
+        return this._get(`races/${competition}`)
     }
 
     _get( route : string ) : Promise<any> {
+        console.log('get ', route);
         return new Promise(resolve => {
                 let url = `${this.base}/${route}.json`;
                 console.log(`_get ${url}`);

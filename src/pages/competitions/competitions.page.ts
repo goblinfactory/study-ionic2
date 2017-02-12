@@ -16,7 +16,6 @@ export class CompetitionsPage {
   competitions : any;
 
   itemTapped($event, competition) {
-    console.log(competition);
     this.nav.push(CompetitionDetailsPage, competition);
   }
 
@@ -27,14 +26,12 @@ export class CompetitionsPage {
     this.api.getCompetitions()
       .then( data => {
       this.competitions = data.slice(0,6);
-      console.log(this.competitions );
     });
   }
 
   doRefresh(refresher) {
         this.api.getCompetitions().then( data => {
       this.competitions = data;
-      console.log(this.competitions); 
       refresher.complete();
     });
   }

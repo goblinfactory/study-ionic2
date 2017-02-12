@@ -9,6 +9,10 @@ ionic sandbox; demo rowing app.
 
 ![mockup of app so far](docs/mockup.png)
 
+## lessons learnt
+
+* [some json lessons, `*ngFor` over deeply nested data might cause issues](json-lessons.md)
+
 ## references
 
 * [Ionic 2 Tutorial](http://ionicframework.com/docs/v2/intro/tutorial/)

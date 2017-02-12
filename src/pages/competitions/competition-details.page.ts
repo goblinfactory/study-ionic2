@@ -1,49 +1,53 @@
-import { Component } from '@angular/core';
+import { Component, Injectable, Pipe } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { RowingApi } from '../../shared/shared'
 
 @Component({
   selector: 'page-competition-details',
   templateUrl: 'competition-details.page.html'
 })
 
+@Pipe({ name: 'derp' })
+export class DerpPipe {
+  transform (value, args) {
+    return Array.from(value);
+  }
+}
             
-
+@Injectable()            
 export class CompetitionDetailsPage {
 
-  _racedata  =  {
-                "University Boat Race": {
-                    "races": [
-                        {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
-                        {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
-                    ]
-                }
-            };
-
+  // races filtered by sex or null
+  racesBySex : any;
   competition: any;
   id : string;
-  races : any;
   sex : any;
-  
-  // hard code for now, inject later
+_races : any;
 
-  constructor(public nav: NavController, public navParams: NavParams) {
-    console.log(`constructor called...`)
+  constructor(public nav: NavController, private api : RowingApi, public navParams: NavParams) {
+    console.log('constructor');
     this.competition = navParams.data;
     this.id = this.competition.id;
     this.sex = "Mens";
-    this._filterBySex();
-  }
+    
+    // unwrap promise
+    this.api.getRaces(this.id).then( res => {
+      this._races = res;
+      console.log("params",{ competition:this.competition, id: this.id, sex:this.sex, races:this._races });
+      this.racesBySex = this._races[this.sex];
+      console.log('racesBySex',this.racesBySex);
+    });
 
-  _filterBySex() {
-    this.races = this._racedata["University Boat Race"].races.filter( r=> r.race ==this.sex);
+    // at this point we're waiting for data to come back
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad (pagename)Page');
+    console.log('did load');
   }
 
   changeSex() {
-    console.log("sex changed ", this.sex);
-    this._filterBySex();
+    this.racesBySex = this._races[this.sex];
   }
 }
+
+

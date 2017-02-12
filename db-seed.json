@@ -76,7 +76,7 @@
                 {
                     "_2016":
                     {
-                        "Men": 
+                        "Mens": 
                         {
                             "coaches": ["Steve Trapmore" ],
                             "cox":"Ian Middleton",
@@ -111,7 +111,7 @@
                 "Oxford":
                 {
                     "_2016":{
-                        "Men":{
+                        "Mens":{
                                 "cox":"Sam Collier",
                                 "rowers": [
                                 { "name":"G McKirdy","nationality":"British", "college":"St Endmund Hall", "weight":76.8 },
@@ -143,11 +143,23 @@
 
             "races": {
                 "University Boat Race": {
-                    "races": [
-                        {"year":2016, "race":"Mens", "id":1234, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
-                        {"year":2016, "race":"Women", "id":1235, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway"}
-                    ]
+                    "Mens": { 
+                        "2016" : {"id":5, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
+                        "2015": {"id":3, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??"},
+                        "2014": { "id":1, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??" }
+                    },
+                    "Women": {
+                        "2016" : {"id":6, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway" },
+                        "2015": {"id":4, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??"},
+                        "2014": {"id":2, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??" }
+                    }
+                },
+                "Boat Race of the North": {
+                    "Mens" : {
+                        "2016": {"id":7, "between":"Durham", "and":"Newcastle", "winner":"Durham", "time":"??", "location":"??" },
+                        "2015": {"id":8, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"??", "location":"??" }},
+                    "Women": {
+                        "2016" :{ "id":9, "between":"Durham", "and":"Newcastle", "winner":"Durham", "time":"??", "location":"??" }}
                 }
             }
-            
 }
