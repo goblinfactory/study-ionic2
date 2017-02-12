@@ -144,23 +144,26 @@
             "races": {
                 "University Boat Race": {
                     "Mens": [
-                        { "year":2016, "id":5, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway"},
-                        { "year":2015, "id":3, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??"},
-                        { "year":2014, "id":1, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??" }
+                        { "year":2016, "id":1, "between":"Cambridge", "and":"Oxford", "winner":"Cambridge", "time":"18m41s", "location":"River Thames Tideway", "margin":2.5, "umpire":"Simon Harris", "date":"2016.03.27"},
+                        { "year":2015, "id":2, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"17m35s", "location":"Middlesex", "margin":6, "umpire":"Boris Rankov", "date":"2015.04.11"},
+                        { "year":2014, "id":3, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"18m36s", "location":"", "margin":11, "umpire":"RIchard Phelps", "date":"2015.04.11"}
+
                     ],
                     "Women": [
-                        { "year":2016, "id":6, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway" },
-                        { "year":2015, "id":4, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??"},
-                        { "year":2014, "id":2, "between":"Cambridge", "and":"Oxford", "winner":"??", "time":"??", "location":"??" }
+                        { "year":2016, "id":4, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"21m49s", "location":"River Thames Tideway" },
+                        { "year":2015, "id":5, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"19m45s", "location":"Middlesex", "margin":6.5, "umpire":"simon Harris", "date":"2014.04.06"},
+                        { "year":2014, "id":6, "between":"Cambridge", "and":"Oxford", "winner":"Oxford", "time":"", "location":"", "margin":0, "umpire":"", "date":"2014.04.06" }
                     ]
                 },
                 "Boat Race of the North": {
                     "Mens" : [
-                        { "year":2016, "id":7, "between":"Durham", "and":"Newcastle", "winner":"Durham", "time":"??", "location":"??" },
-                        { "year":2015, "id":8, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"??", "location":"??" }
+                        { "year":2016, "team":"1st eight", "id":7, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"??", "margin":2.25, "location":"-", "date":"2016.05.07" },
+                        { "year":2016, "team":"2nd eight", "id":8, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"??", "margin":2.75, "location":"-", "date":"2016.05.07" },
+                        { "year":2015, "id":9, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"??", "location":"-","date":"2016.05.07" }
                     ],
                     "Women": [
-                        { "year":2016, "id":9, "between":"Durham", "and":"Newcastle", "winner":"Durham", "time":"??", "location":"??" }
+                        { "year":2016, "team":"1st eight", "id":12, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"-", "location":"-", "margin":2.75 ,"date":"2016.05.07" },
+                        { "year":2016, "team":"2nd eight", "id":13, "between":"Durham", "and":"Newcastle", "winner":"Newcastle", "time":"-", "location":"-", "margin":4, "date":"2016.05.07" }
                     ]
                 }
             }
