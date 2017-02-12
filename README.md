@@ -11,7 +11,7 @@ ionic sandbox; demo rowing app.
 
 ## lessons learnt
 
-* [some json lessons, `*ngFor` over deeply nested data might cause issues](json-lessons.md)
+* [some json lessons, `*ngFor` over deeply nested data, and or dictionaries instead of arrays](json-lessons.md)
 
 ## references
 
